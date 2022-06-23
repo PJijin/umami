@@ -30,7 +30,7 @@ function forceSSL(req, res) {
 }
 
 export function middleware(req) {
-  const fns = [customScriptName, disableLogin];
+  const fns = [customScriptName];
 
   for (const fn of fns) {
     const res = fn(req);
